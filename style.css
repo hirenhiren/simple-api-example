@@ -1,0 +1,45 @@
+body {
+    background: #8ecae6;
+    text-align: center;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    color:#023047;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.meme-card {
+    padding: 1em;
+    background-color: #219ebc;
+    border-radius: 10px; /* Increased border radius for a softer look */
+    width: 40%; /* Adjusted width for better readability on smaller screens */
+    max-width: 300px; /* Added max-width to prevent stretching on larger screens */
+    height: auto; /* Set height to auto for dynamic height based on content */
+    text-align: center;
+    margin: 20px auto; /* Centered the card horizontally */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.meme-card img {
+    max-width: 100%; /* Ensured the image doesn't exceed the card width */
+    height: 400px; /* Allow the image to adjust its height accordingly */
+    border-radius: 10px; /* Matched border radius with the card */
+    object-fit: cover;
+}
+
+button {
+    background-color: #023047;
+    color: #fff;
+    padding: 10px 20px; /* Increased padding for better touchability */
+    border-radius: 5px;
+    font-size: 18px; /* Reduced font size for better proportion */
+    border: none; /* Removed default button border */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .meme-card {
+        width: 80%; /* Adjusted width for smaller screens */
+    }
+}
